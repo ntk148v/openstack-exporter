@@ -39,6 +39,8 @@ github.com/gophercloud/gophercloud/openstack/blockstorage/extensions/services
 github.com/gophercloud/gophercloud/openstack/blockstorage/extensions/volumetenants
 github.com/gophercloud/gophercloud/openstack/blockstorage/v3/snapshots
 github.com/gophercloud/gophercloud/openstack/blockstorage/v3/volumes
+github.com/gophercloud/gophercloud/openstack/clustering/v1/clusters
+github.com/gophercloud/gophercloud/openstack/clustering/v1/nodes
 github.com/gophercloud/gophercloud/openstack/compute/apiversions
 github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/aggregates
 github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/availabilityzones
@@ -125,6 +127,9 @@ github.com/gophercloud/utils/v2/env
 github.com/gophercloud/utils/v2/gnocchi
 github.com/gophercloud/utils/v2/internal
 github.com/gophercloud/utils/v2/openstack/clientconfig
+# github.com/grafana/regexp v0.0.0-20240518133315-a468a5bfb3bc
+## explicit; go 1.21
+github.com/grafana/regexp
 # github.com/hashicorp/go-uuid v1.0.3
 ## explicit
 github.com/hashicorp/go-uuid

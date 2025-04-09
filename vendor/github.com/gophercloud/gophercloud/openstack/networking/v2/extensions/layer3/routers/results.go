@@ -246,9 +246,8 @@ func (r *L3Agent) UnmarshalJSON(b []byte) error {
 	type tmp L3Agent
 	var s struct {
 		tmp
-		CreatedAt          gophercloud.JSONRFC3339ZNoTNoZ `json:"created_at"`
-		StartedAt          gophercloud.JSONRFC3339ZNoTNoZ `json:"started_at"`
-		HeartbeatTimestamp gophercloud.JSONRFC3339ZNoTNoZ `json:"heartbeat_timestamp"`
+		CreatedAt gophercloud.JSONRFC3339ZNoTNoZ `json:"created_at"`
+		StartedAt gophercloud.JSONRFC3339ZNoTNoZ `json:"started_at"`
 	}
 	err := json.Unmarshal(b, &s)
 	if err != nil {
@@ -258,7 +257,6 @@ func (r *L3Agent) UnmarshalJSON(b []byte) error {
 
 	r.CreatedAt = time.Time(s.CreatedAt)
 	r.StartedAt = time.Time(s.StartedAt)
-	r.HeartbeatTimestamp = time.Time(s.HeartbeatTimestamp)
 
 	return nil
 }
